@@ -14,7 +14,7 @@ pacman::p_load("knitr","kableExtra")
 ## Document assignment
 
 Consider the following situation:  
-
+  
 A sloppy printer produces books with an average of 2 misprints per page. You want to
 know how many pages have more than k misprints in a book of n pages. Make an n x k table that shows the relationship between the total number of pages in a book and the number of pages with k misprints.
 
@@ -92,7 +92,7 @@ The question is about least errors appear whinin n pages, so we need to get cumu
 
 The equation to get CDF of poisson distribution is:
 $e^{-\lambda }\sum_{i=0}^{k}\frac{\lambda ^{i}}{i!}$
-
+  
 Like if we get 100 misprints in a book of 
 
 The main part of the code is:

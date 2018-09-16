@@ -93,12 +93,12 @@ kable(x = error, booktabs = T, caption = "Probability of total misprints within 
   add_header_above(c(" " = 2, "pages" = 6))
 ```
 
-I also consider the situation of least errors appear whinin n pages, so cumulative probability of poisson distribution is needed.
+I also consider the situation of least errors appear within n pages, so the cumulative probability of poisson distribution is needed.
 
 The equation to get CDF of poisson distribution is:
 $e^{-\lambda }\sum_{i=0}^{k}\frac{\lambda ^{i}}{i!}$
   
-Like if we get 100 misprints in a book of 100 pages, the equation should look like:
+Like if we get more than 100 misprints in a book of 100 pages, the equation should look like:
 $e^{-2}\sum_{i=100}^{n}\frac{2^{i}}{i!}$
 
 The main part of the code is:
